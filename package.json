@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/lib/index.js",
-  "types":"dist/lib/index",
+  "types": "dist/lib/index",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.3",
     "awesome-typescript-loader": "^5.2.1",
+    "cross-env": "^7.0.3",
     "html-webpack-plugin": "^3.2.0",
     "typescript": "^3.3.3333",
     "webpack": "^4.29.6",
