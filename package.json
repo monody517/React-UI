@@ -2,7 +2,8 @@
   "name": "React-UI",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "dist/lib/index.js",
+  "types":"dist/lib/index",
   "directories": {
     "lib": "lib"
   },
