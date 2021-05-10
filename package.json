@@ -2,7 +2,10 @@
   "name": "React-UI",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,9 +22,10 @@
   "homepage": "https://github.com/monody517/React-UI#readme",
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "typescript": "^4.2.4",
-    "webpack": "4.29.6",
-    "webpack-cli": "3.2.3",
-    "webpack-dev-server": "3.2.1"
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   }
 }
