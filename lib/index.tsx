@@ -2,5 +2,5 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import Icon from './icon'
 
-ReactDOM.render(<Icon name="wechat"></Icon>,document.body)
+ReactDOM.render(<Icon name="pay"></Icon>,document.querySelector('#root'))
 
