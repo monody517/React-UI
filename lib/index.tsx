@@ -10,5 +10,5 @@ ReactDOM.render(<Icon
     onClick={fn} 
     onMouseEnter={()=>console.log('enter')}
     onMouseLeave={()=>console.log('leave')}
-    name=""></Icon>,document.querySelector('#root'))
+    name="pay"></Icon>,document.querySelector('#root'))
 
