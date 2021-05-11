@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { SVGAttributes } from 'react'
 // import wechat from './icons/wechat.svg'
 import './importIcons.js'
 import './icon.scss'
+import classnames from './helper/classNames'
 
-
-interface IconProps {
+interface IconProps extends SVGAttributes<SVGElement>{
     name:string;
-    onClick:()=>void
 }
 
 const Icon:React.FunctionComponent<IconProps> = (props) => {
-    return(      
-        <svg className="icon" onClick={props.onClick}>
+    return(
+        <svg className={classnames("icon",props.name)} {...props}>
             <use xlinkHref={`#${props.name}`}></use>
         </svg>
     )
