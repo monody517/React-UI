@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import Icon from './icons/icon'
 import Dialog from './dialog/dialog.explame'
+import './index.scss'
 
 const fn:React.MouseEventHandler= (e) => {
     console.log(e.target)
