@@ -2,11 +2,12 @@
 .jui-dialog {
   position: fixed;
   background: white;
-  min-width: 15em;
+  min-width: 30em;
   border-radius: 4px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px 5px #696969; 
   &-mask {
     position: fixed;
     top: 0;
@@ -20,19 +21,41 @@
     padding: 8px 16px;
   }
   &-main {
+    border-top: 1px solid #9d8f90;
+    border-bottom: 1px solid #9d8f90;
+    font-size: 20px;
+    color: #9d8f90;
     min-height: 6em;
   }
   &-footer {
+    padding: 8px 16px;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-footer > *{
+    border-radius: 5px;
+    padding:3px 3px;
+    font-size: 17px;
+    margin-left: 20px;
+    color: $main-color;
+    cursor:pointer;
+  }
+  &-footer > *:hover{
+    background: #fbab002a;
   }
   &-close {
     position: absolute;
-    bottom: 100%;
     left: 100%;
-    background: $main-color;
+    top: 3%;
     width: 2em;
     height: 2em;
     border-radius: 50%;
+    color: black;
+    transform: translate(-110%)
+  }
+  &-close:hover{
+    background: #fbab0060;
     color: white;
-    transform: translate(-50%, 50%);
   }
 }
