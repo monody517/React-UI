@@ -1,7 +1,7 @@
 import React from 'react'
 import Aside from './Aside'
 import Content from './Content'
-import Footer from './footer'
+import Footer from './Footer'
 import Header from './Header'
 import Layout from './Layout'
 import './Layout.explame.scss'
