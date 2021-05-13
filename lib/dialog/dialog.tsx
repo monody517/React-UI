@@ -36,8 +36,7 @@ const Dialog:React.FunctionComponent<dialogProps> = (props)=>{
             <main className={sc('main')}>{props.children}</main>
             {props.buttons && <footer className={sc('footer')}>
                 {props.buttons && props.buttons.map((button,index)=>React.cloneElement(button,{key:index}))}
-            </footer>  }
-              
+            </footer>  }       
         </div>
     </Fragment> : null
     return(

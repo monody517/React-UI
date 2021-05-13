@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import Icon from './icons/icon'
 import Dialog from './dialog/dialog.explame'
+import Layout from './Layout/Layout.explame'
 import './index.scss'
 
 const fn:React.MouseEventHandler= (e) => {
@@ -19,6 +20,7 @@ ReactDOM.render(
     </div>
 
     <Dialog></Dialog>
+    <Layout></Layout>
 </div>
     ,document.querySelector('#root'))
 
