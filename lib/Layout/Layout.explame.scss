@@ -1,0 +1,21 @@
+@import "../helper/helper";
+.x {
+  background: #fbab0060;
+  height: 100px;
+  margin: 4px 0;
+}
+.y {
+  background: $main-color;
+  margin: 4px 0;
+}
+.z {
+  background: #ffaa009f;
+  width: 100px;
+  margin: 4px 0;
+}
+
+.z + .y,
+.y + .z,
+.z + .jui-layout {
+  margin-left: 8px;
+}

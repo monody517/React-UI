@@ -1,15 +1,16 @@
 import scopedClassMeak from '../helper/classMeak'
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
-interface footerProps{ 
+interface footerProps extends HTMLAttributes<HTMLElement>{ 
     
 }
 const sc =scopedClassMeak('jui-layout')
 
 const Footer:React.FunctionComponent<footerProps> = (props) => {
+    const {className,...rest}=props
     return(
-        <div className={sc('footer')}>
-            footer
+        <div className={sc('footer',{extra:className})} {...rest}>
+            {props.children}
         </div>
     )
 }
