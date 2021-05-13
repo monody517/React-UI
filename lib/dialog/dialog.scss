@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 5px 5px #696969; 
+  box-shadow: 0 0 5px 5px #696969;
   &-mask {
     position: fixed;
     top: 0;
@@ -33,15 +33,15 @@
     display: flex;
     justify-content: flex-end;
   }
-  &-footer > *{
+  &-footer > * {
     border-radius: 5px;
-    padding:3px 3px;
+    padding: 5px 15px;
     font-size: 17px;
     margin-left: 20px;
     color: $main-color;
-    cursor:pointer;
+    cursor: pointer;
   }
-  &-footer > *:hover{
+  &-footer > *:hover {
     background: #fbab002a;
   }
   &-close {
@@ -52,9 +52,9 @@
     height: 2em;
     border-radius: 50%;
     color: black;
-    transform: translate(-110%)
+    transform: translate(-110%);
   }
-  &-close:hover{
+  &-close:hover {
     background: #fbab0060;
     color: white;
   }
