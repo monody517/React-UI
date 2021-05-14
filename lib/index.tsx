@@ -2,20 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 import DialogExample from './dialog/dialog.explame';
+import Aside from './Layout/Aside';
+import Content from './Layout/Content';
+import Footer from './Layout/Footer';
+import Header from './Layout/Header';
+import Layout from './Layout/Layout';
 import LayoutExample from './Layout/Layout.explame';
+import './index.scss'
+const logo = require('./logo/logo.png')
+console.log(logo);
 
 
 ReactDOM.render(
   <Router>
-    <div>
-      <header>
+    <Layout className='site-page'>
+      <Header className='site-header'>
         <div className="logo">
+          <img src={logo.default} alt="" width="58"/>
           JUI
         </div>
-
-      </header>
-      <div>
-        <aside>
+      </Header>
+      <Layout>
+        <Aside className='site-aside' style={{border : '1px solid green'}}>
           <h2>组件</h2>
           <ul>
             <li>
@@ -25,13 +33,16 @@ ReactDOM.render(
               <Link to="/layout">布局</Link>
             </li>
           </ul>
-        </aside>
-        <main>
+        </Aside>
+        <Content className='site-content'>
           <Route path="/dialog" component={DialogExample}/>
           <Route path="/layout" component={LayoutExample}/>
-        </main>
-      </div>
-    </div>
+        </Content>
+      </Layout>
+      <Footer className='site-footer'>
+          版权信息
+        </Footer>
+    </Layout>
   </Router>
   , document.querySelector('#root'));
 
