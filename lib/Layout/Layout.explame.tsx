@@ -10,13 +10,13 @@ export default function(){
     return(
         <>
             <h1>第一个例子</h1>
-            <Layout style={{height:400}} className='333'>
+            <Layout style={{height:500, width:400}} className='333'>
                 <Header className={'x'}>header</Header>
                 <Content className={'y'}>content</Content>
                 <Footer className={'x'}>footer</Footer>
             </Layout>
             <h1>第二个例子</h1>
-            <Layout style={{height:500}} className='333'>
+            <Layout style={{height:500, width:400}}>
                 <Header className={'x'}>header</Header>
                 <Layout>
                     <Aside className={'z'}>Aside</Aside>
@@ -25,7 +25,7 @@ export default function(){
                 <Footer className={'x'}>footer</Footer>
             </Layout>
             <h1>第三个例子</h1>
-            <Layout style={{height:500}} className='333'>
+            <Layout style={{height:500, width:400}}>
                 <Header className={'x'}>header</Header>
                 <Layout>
                     <Content className={'y'}>content</Content>
@@ -34,7 +34,7 @@ export default function(){
                 <Footer className={'x'}>footer</Footer>
             </Layout>
             <h1>第四个例子</h1>
-            <Layout style={{height:500}} className='333'>    
+            <Layout style={{height:500, width:400}}>    
                 <Aside className={'z'}>Aside</Aside> 
                 <Layout>
                     <Header className={'x'}>header</Header>

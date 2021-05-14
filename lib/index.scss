@@ -35,11 +35,15 @@ body {
   font-size: 16px;
 }
 .site-page {
+  display: flex;
   background: #ffffff;
   min-height: 100vh;
+  flex-direction: column;
 }
 .site-main {
+  display: flex;
   padding-top: 16px;
+  flex-grow: 1;
 }
 .site-header {
   background: $border-color;
