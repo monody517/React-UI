@@ -9,8 +9,10 @@ import Header from './Layout/Header';
 import Layout from './Layout/Layout';
 import LayoutExample from './Layout/Layout.explame';
 import './index.scss'
+import DialogDemo from './dialog/dialog.demo';
 const logo = require('./logo/logo.png')
 console.log(logo);
+
 
 
 ReactDOM.render(
@@ -35,6 +37,7 @@ ReactDOM.render(
           </ul>
         </Aside>
         <Content className='site-content'>
+          <Route path="/dialog" component={DialogDemo}></Route>
           <Route path="/dialog" component={DialogExample}/>
           <Route path="/layout" component={LayoutExample}/>
         </Content>
