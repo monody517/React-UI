@@ -4,8 +4,10 @@ import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
 import DialogDemo from './dialog/dialog.demo';
 import IconDemo from './icons/icon.demo';
 import LayoutDemo from './Layout/Layout.demo'
+import ButtonDemo from './buttons/button.demo';
 import './index.scss'
 import Icon from './icons/icon';
+
 
 const logo = require('./logo/logo.png');
 ReactDOM.render(
@@ -23,6 +25,9 @@ ReactDOM.render(
           <h2>组件</h2>
           <ul>
           <li>
+              <NavLink to="/button">按钮</NavLink>
+          </li>
+          <li>
               <NavLink to="/icon">图标</NavLink>
             </li>
             <li>
@@ -34,7 +39,8 @@ ReactDOM.render(
           </ul>
         </div>
         <div className={'site-content'}>
-        <Route path="/icon" component={IconDemo}/>
+        <Route path="/button" component={ButtonDemo}/>
+          <Route path="/icon" component={IconDemo}/>
           <Route path="/dialog" component={DialogDemo}/>
           <Route path="/layout" component={LayoutDemo}/> 
         </div>

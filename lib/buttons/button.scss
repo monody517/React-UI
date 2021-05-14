@@ -1,0 +1,23 @@
+@import "../helper/helper";
+.jui-button {
+  padding: 4px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.jui-button:hover {
+  border: 1px solid $main-color;
+}
+.primary {
+  background: $main-color;
+  color: white;
+  transition: 1s;
+}
+.primary:hover {
+  background: #fbab00a6;
+}
