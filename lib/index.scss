@@ -52,12 +52,18 @@ body {
     padding: 0 $padding;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     > img {
       margin-right: 8px;
     }
     > span {
       color: $main-color;
-      font-size: 32px;
+      font-size: 24px;
+    }
+    > .github {
+      margin-left: auto;
+      width: 2.5em;
+      height: 2.5em;
     }
   }
 }

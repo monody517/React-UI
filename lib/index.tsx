@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter as Router, Route, Link,NavLink} from 'react-router-dom';
+import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
 import DialogDemo from './dialog/dialog.demo';
 import IconDemo from './icons/icon.demo';
 import LayoutDemo from './Layout/Layout.demo'
 import './index.scss'
+import Icon from './icons/icon';
 
 const logo = require('./logo/logo.png');
 ReactDOM.render(
@@ -13,7 +14,8 @@ ReactDOM.render(
       <div className={'site-header'}>
         <div className="logo">
           <img src={logo.default} alt="" width='48' height='48'></img>
-          JUI
+          <span>J-React-UI</span>
+          <Icon className={'github'} name='github'></Icon>
         </div>
       </div>
       <div className={'site-main'}>
