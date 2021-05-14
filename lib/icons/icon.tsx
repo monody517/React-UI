@@ -1,5 +1,4 @@
 import React, { SVGAttributes } from 'react'
-// import wechat from './icons/wechat.svg'
 import '../importIcons.js'
 import './icon.scss'
 import classnames from '../helper/classNames'

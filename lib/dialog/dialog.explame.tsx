@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import Dialog, {alert, confirm, model} from './dialog'
 export default function(){
@@ -28,5 +27,4 @@ export default function(){
             <button onClick={onModel}>model</button>
         </>
     )
-
 }

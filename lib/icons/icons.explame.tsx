@@ -1,20 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import Icon from './icon'
-import './index.scss'
 
-const fn:React.MouseEventHandler= (e) => {
-    console.log(e.target)
+export default function(){
+    const fn:React.MouseEventHandler= (e) => {
+        console.log(e.target)
+    }
+    return(
+        <div>
+            <div>
+                <Icon 
+                onClick={fn} 
+                onMouseEnter={()=>console.log('enter')}
+                onMouseLeave={()=>console.log('leave')}
+                name="pay"></Icon>
+            </div>
+        </div>
+    )
 }
-
-ReactDOM.render(
-<div>
-    <div>
-        <Icon 
-        onClick={fn} 
-        onMouseEnter={()=>console.log('enter')}
-        onMouseLeave={()=>console.log('leave')}
-        name="pay"></Icon>
-    </div>
-</div>
-    ,document.querySelector('#root'))
