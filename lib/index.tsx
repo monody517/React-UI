@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
-import DialogExample from './dialog/dialog.explame';
 import Aside from './Layout/Aside';
 import Content from './Layout/Content';
 import Footer from './Layout/Footer';
@@ -38,7 +37,6 @@ ReactDOM.render(
         </Aside>
         <Content className='site-content'>
           <Route path="/dialog" component={DialogDemo}></Route>
-          <Route path="/dialog" component={DialogExample}/>
           <Route path="/layout" component={LayoutExample}/>
         </Content>
       </Layout>
