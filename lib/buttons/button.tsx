@@ -10,9 +10,14 @@ interface Props{
 }
 
 const Button:React.FunctionComponent<Props> = (props) =>{
-    
+    let [x,setX] = React.useState(false)
+    const changeX = () =>{
+        return x = !x
+    }
     return (
-        <div className={sc('',{extra:props.type})}><span>{props.type? props.type : 'default'}</span></div>
-    )
+            <button onClick={()=>{setX(changeX)}} className={sc('',{extra:props.type})}><span>{props.type? props.type : 'default'}</span></button>    
+        )
 }
+
 export default Button
+

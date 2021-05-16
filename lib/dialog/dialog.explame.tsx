@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Dialog, {alert, confirm, model} from './dialog'
+import Button from '../buttons/button'
+
 export default function(){
     const [x,setX] = useState(false)
     const onModel = ()=>{
@@ -9,7 +11,8 @@ export default function(){
     }
     return(
         <>
-            <button onClick={() => { setX(!x) } }>click</button>
+            {/* <Button onClick={() => { return setX(!x) } }>click</Button> */}
+            <Button>click</Button>
             <Dialog visible={x} buttons={
                 [
                     <div onClick={()=>console.log("1")

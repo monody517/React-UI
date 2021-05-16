@@ -7,11 +7,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(0, 0, 0, 0.15);
+  color: #7f6e73;
   cursor: pointer;
+  transition: .5s;
 }
 .jui-button:hover {
   border: 1px solid $main-color;
+  color: $main-color
 }
 .primary {
   background: $main-color;
@@ -20,4 +22,24 @@
 }
 .primary:hover {
   background: #fbab00a6;
+  color: white
+}
+.Dashed{
+  border: 1px #7f6e73 dashed;
+  transition: 1s;
+}
+.Dashed:hover {
+  border: 1px $main-color dashed;
+  color: $main-color
+}
+.Danger{
+  background: #f5f5f5;
+  color:#f5574f;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: 1s;
+}
+.Danger:hover{
+  border: 1px solid #f5574f;
+  background: #f5574f;
+  color: white;
 }

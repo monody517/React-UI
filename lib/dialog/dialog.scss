@@ -46,13 +46,12 @@
   }
   &-close {
     position: absolute;
-    left: 100%;
-    top: 3%;
+    left: 27em;
+    top: .1em;
     width: 2em;
     height: 2em;
     border-radius: 50%;
     color: black;
-    transform: translate(-110%);
   }
   &-close:hover {
     background: #fbab0060;
