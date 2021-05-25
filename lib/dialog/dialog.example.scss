@@ -1,0 +1,7 @@
+.dialogs {
+  display: flex;
+  flex-direction: row;
+  > Button {
+    margin-right: 40px;
+  }
+}

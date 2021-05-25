@@ -47,14 +47,10 @@
   &-close {
     position: absolute;
     left: 27em;
-    top: .1em;
+    top: 0.1em;
     width: 2em;
     height: 2em;
     border-radius: 50%;
     color: black;
-  }
-  &-close:hover {
-    background: #fbab0060;
-    color: white;
   }
 }
