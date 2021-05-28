@@ -5,6 +5,7 @@ import DialogDemo from './dialog/dialog.demo';
 import IconDemo from './icons/icon.demo';
 import LayoutDemo from './Layout/Layout.demo'
 import ButtonDemo from './buttons/button.demo';
+import example from './example/example'
 import './index.scss'
 import Icon from './icons/icon';
 
@@ -36,13 +37,17 @@ ReactDOM.render(
             <li>
               <NavLink to="/layout">布局</NavLink>
             </li>
+            <li>
+              <NavLink to="/example">example</NavLink>
+            </li>
           </ul>
         </div>
         <div className={'site-content'}>
-        <Route path="/button" component={ButtonDemo}/>
+          <Route path="/button" component={ButtonDemo}/>
           <Route path="/icon" component={IconDemo}/>
           <Route path="/dialog" component={DialogDemo}/>
-          <Route path="/layout" component={LayoutDemo}/> 
+          <Route path="/layout" component={LayoutDemo}/>
+          <Route path="/example" component={example}/>
         </div>
       </div>
       <div className={'site-footer'}>
