@@ -39,6 +39,16 @@
       line-height: 22px;
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       color: rgba(0, 0, 0, 0.65);
+      > span {
+        color: rgba(0, 0, 0, 0.45);
+        display: inline-flex;
+        justify-content: center;
+        align-content: center;
+        cursor: pointer;
+        position: absolute;
+        bottom: 18px;
+        right: 12px;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+import Icon from '../icons/icon'
 import React from 'react'
 import './example.scss'
 
@@ -15,8 +16,11 @@ const example:React.FunctionComponent<Props> = (props) =>{
                     {props.children}
                 </div>
                 <div className='code-example-box'>
-                    <div className='code-title'></div>
-                    <div className='code-description'></div>
+                    <div className='code-title'>{props.title}</div>
+                    <div className='code-description'>
+                        {props.description}
+                        <span><Icon name='show'></Icon></span>
+                        </div>
                 </div>
             </div>
         </>
