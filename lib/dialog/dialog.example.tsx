@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Dialog, {alert, confirm, model} from './dialog'
 import Button from '../buttons/buttons'
+import Example from '../example/example'
 import './dialog.example.scss';
 
 export default function(){
@@ -11,6 +12,7 @@ export default function(){
         </h1>)
     }
     return(
+        <Example title='对话框' description='支持各种自定义事件的对话框'>
         <div className="dialogs">
             <Dialog 
             visible={x} 
@@ -39,5 +41,6 @@ export default function(){
             type='default'
             click={onModel}>model</Button>
         </div>
+        </Example>
     )
 }
