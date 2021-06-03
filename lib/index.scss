@@ -44,7 +44,13 @@ body {
   display: flex;
   padding-top: 16px;
   flex-grow: 1;
+  .site-content {
+    // display: flex;
+    // justify-content: center;
+    margin-left: 25%;
+  }
 }
+
 .site-header {
   background: $border-color;
   padding: 8px 0;

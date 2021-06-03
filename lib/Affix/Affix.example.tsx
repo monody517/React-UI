@@ -8,6 +8,26 @@ export default function() {
             <Example title='固钉' description='固定位置的钉'>
                 <Affix distance = {1}>Affix</Affix>
             </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
+            <Example title='固钉' description='固定位置的钉'>
+            </Example>
         </>
     )
 }
