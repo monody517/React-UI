@@ -5,7 +5,7 @@ import DialogDemo from './dialog/dialog.demo';
 import IconDemo from './icons/icon.demo';
 import LayoutDemo from './Layout/Layout.demo'
 import ButtonDemo from './buttons/button.demo';
-import example from './example/example'
+import AffixDemo from './Affix/Affix.demo'
 import './index.scss'
 import Icon from './icons/icon';
 
@@ -38,7 +38,7 @@ ReactDOM.render(
               <NavLink to="/layout">布局</NavLink>
             </li>
             <li>
-              <NavLink to="/example">example</NavLink>
+              <NavLink to="/Affix">固钉</NavLink>
             </li>
           </ul>
         </div>
@@ -47,7 +47,7 @@ ReactDOM.render(
           <Route path="/icon" component={IconDemo}/>
           <Route path="/dialog" component={DialogDemo}/>
           <Route path="/layout" component={LayoutDemo}/>
-          <Route path="/example" component={example}/>
+          <Route path="/Affix" component={AffixDemo}/>
         </div>
       </div>
       <div className={'site-footer'}>
